@@ -1,17 +1,18 @@
-# SigmaOS-activity-log
+# SigmaOS activity log
 
-Linux Mint/Omarchy/Arch-inspired component for SigmaOS.
+This crate is currently an identity scaffold. Its `no_std` library constructs
+a `Component` with the fixed name `SigmaOS Component`; it does not record,
+persist, query, or display user activity.
 
-## Inspiration
+The package has no external dependencies. The inline unit test checks the
+scaffold's fixed name and is not evidence of an activity logging workflow.
 
-This component is inspired by Linux Mint, Omarchy, and Arch Linux to provide:
-- Essential OS functionality
-- Desktop integration
-- System management
-- Clear documentation
+## Build
 
-## Status
+```sh
+cargo check --lib
+```
 
-- Architecture: Designed
-- Implementation: Basic
-- Testing: Basic
+## License
+
+Apache-2.0. See [`Cargo.toml`](Cargo.toml).
